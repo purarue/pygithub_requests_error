@@ -5,6 +5,7 @@ Debugging/Scripts for a issue made on PyGithub
 Token scopes: ![](https://i.imgur.com/OMFrNnK.png)
 
 - Create `token.json` (see `token.json.dist` for an example, put a token in that)
+- `pipenv sync`
 - run `./run`
 
 Originally discovered <https://github.com/karlicoss/ghexport/issues/4>
