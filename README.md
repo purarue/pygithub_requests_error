@@ -1,5 +1,7 @@
 Debugging/Scripts for a issue made on PyGithub
 
+<https://github.com/PyGithub/PyGithub/issues/1700>
+
 Token scopes: ![](https://i.imgur.com/OMFrNnK.png)
 
 - Create `token.json` (see `token.json.dist` for an example, put a token in that)
@@ -22,8 +24,6 @@ I'm unsure how I'd debug a failing `requests.get` any further, it doesn't feel l
 Believe I've removed all instances of my token from this, but its deleted in any case.
 
 For output, see `log.txt`
-
-`curl
 
 ```
 httpx==0.14.3
