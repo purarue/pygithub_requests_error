@@ -1,0 +1,296 @@
+  ____ _   _ ____  _     
+ / ___| | | |  _ \| |    
+| |   | | | | |_) | |    
+| |___| |_| |  _ <| |___ 
+ \____|\___/|_| \_\_____|
+                         
+*   Trying 192.30.255.117:443...
+* Connected to api.github.com (192.30.255.117) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: none
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [512 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [122 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [25 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [2975 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [264 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [36 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [36 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256
+* ALPN, server accepted to use http/1.1
+* Server certificate:
+*  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.com
+*  start date: Jun 22 00:00:00 2020 GMT
+*  expire date: Aug 17 12:00:00 2022 GMT
+*  subjectAltName: host "api.github.com" matched cert's "*.github.com"
+*  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=DigiCert SHA2 High Assurance Server CA
+*  SSL certificate verify ok.
+} [5 bytes data]
+> GET /repos/abhinavk99/jikanpy/traffic/views HTTP/1.1
+> Host: api.github.com
+> User-Agent: curl/7.72.0
+> Accept: */*
+> 
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [57 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [57 bytes data]
+* old SSL session ID is stale, removing
+{ [5 bytes data]
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 403 Forbidden
+< date: Mon, 21 Sep 2020 19:08:11 GMT
+< content-type: application/json; charset=utf-8
+< server: GitHub.com
+< status: 403 Forbidden
+< x-github-media-type: github.v3; format=json
+< access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
+< access-control-allow-origin: *
+< strict-transport-security: max-age=31536000; includeSubdomains; preload
+< x-frame-options: deny
+< x-content-type-options: nosniff
+< x-xss-protection: 1; mode=block
+< referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+< content-security-policy: default-src 'none'
+< vary: Accept-Encoding, Accept, X-Requested-With
+< X-Ratelimit-Limit: 60
+< X-Ratelimit-Remaining: 56
+< X-Ratelimit-Reset: 1600718595
+< X-Ratelimit-Used: 4
+< Content-Length: 141
+< X-GitHub-Request-Id: CEFC:02F1:89B46C:ABEF37:5F68FA1B
+< 
+{ [141 bytes data]
+* Connection #0 to host api.github.com left intact
+{
+  "message": "Must have push access to repository",
+  "documentation_url": "https://docs.github.com/rest/reference/repos#get-page-views"
+}
+*   Trying 192.30.255.116:443...
+* Connected to api.github.com (192.30.255.116) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: none
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [512 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [122 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [25 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [2975 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [264 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [36 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [36 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256
+* ALPN, server accepted to use http/1.1
+* Server certificate:
+*  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.com
+*  start date: Jun 22 00:00:00 2020 GMT
+*  expire date: Aug 17 12:00:00 2022 GMT
+*  subjectAltName: host "api.github.com" matched cert's "*.github.com"
+*  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=DigiCert SHA2 High Assurance Server CA
+*  SSL certificate verify ok.
+} [5 bytes data]
+> GET /repos/abhinavk99/jikanpy/traffic/views HTTP/1.1
+> Host: api.github.com
+> User-Agent: curl/7.72.0
+> Accept: */*
+> Authorization: token <TOKEN HERE>
+> 
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [57 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [57 bytes data]
+* old SSL session ID is stale, removing
+{ [5 bytes data]
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Date: Mon, 21 Sep 2020 19:08:17 GMT
+< Content-Type: application/json; charset=utf-8
+< Content-Length: 1466
+< Server: GitHub.com
+< Status: 200 OK
+< Cache-Control: private, max-age=60, s-maxage=60
+< Vary: Accept, Authorization, Cookie, X-GitHub-OTP
+< ETag: "b0ffe75248d84d876e4b74df767416da51a3aee529f226db11e837a213de5fde"
+< X-OAuth-Scopes: repo
+< X-Accepted-OAuth-Scopes: 
+< X-GitHub-Media-Type: github.v3; format=json
+< X-RateLimit-Limit: 5000
+< X-RateLimit-Remaining: 4306
+< X-RateLimit-Reset: 1600716498
+< X-RateLimit-Used: 694
+< Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
+< Access-Control-Allow-Origin: *
+< Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+< X-Frame-Options: deny
+< X-Content-Type-Options: nosniff
+< X-XSS-Protection: 1; mode=block
+< Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+< Content-Security-Policy: default-src 'none'
+< Vary: Accept-Encoding, Accept, X-Requested-With
+< Vary: Accept-Encoding
+< X-GitHub-Request-Id: CDCC:8BFD:32AC93:40F7BE:5F68FA21
+< 
+{ [132 bytes data]
+* Connection #0 to host api.github.com left intact
+{
+  "count": 266,
+  "uniques": 101,
+  "views": [
+    {
+      "timestamp": "2020-09-07T00:00:00Z",
+      "count": 2,
+      "uniques": 1
+    },
+    {
+      "timestamp": "2020-09-08T00:00:00Z",
+      "count": 44,
+      "uniques": 8
+    },
+    {
+      "timestamp": "2020-09-09T00:00:00Z",
+      "count": 11,
+      "uniques": 6
+    },
+    {
+      "timestamp": "2020-09-10T00:00:00Z",
+      "count": 10,
+      "uniques": 9
+    },
+    {
+      "timestamp": "2020-09-11T00:00:00Z",
+      "count": 39,
+      "uniques": 15
+    },
+    {
+      "timestamp": "2020-09-12T00:00:00Z",
+      "count": 15,
+      "uniques": 10
+    },
+    {
+      "timestamp": "2020-09-13T00:00:00Z",
+      "count": 20,
+      "uniques": 8
+    },
+    {
+      "timestamp": "2020-09-14T00:00:00Z",
+      "count": 19,
+      "uniques": 12
+    },
+    {
+      "timestamp": "2020-09-15T00:00:00Z",
+      "count": 7,
+      "uniques": 6
+    },
+    {
+      "timestamp": "2020-09-16T00:00:00Z",
+      "count": 10,
+      "uniques": 8
+    },
+    {
+      "timestamp": "2020-09-17T00:00:00Z",
+      "count": 37,
+      "uniques": 11
+    },
+    {
+      "timestamp": "2020-09-18T00:00:00Z",
+      "count": 12,
+      "uniques": 5
+    },
+    {
+      "timestamp": "2020-09-19T00:00:00Z",
+      "count": 13,
+      "uniques": 5
+    },
+    {
+      "timestamp": "2020-09-20T00:00:00Z",
+      "count": 11,
+      "uniques": 6
+    },
+    {
+      "timestamp": "2020-09-21T00:00:00Z",
+      "count": 16,
+      "uniques": 8
+    }
+  ]
+}
+ ____    _    ____ ___ ____   ______   ______ ___ _____ _   _ _   _ ____  
+| __ )  / \  / ___|_ _/ ___| |  _ \ \ / / ___|_ _|_   _| | | | | | | __ ) 
+|  _ \ / _ \ \___ \| | |     | |_) \ V / |  _ | |  | | | |_| | | | |  _ \ 
+| |_) / ___ \ ___) | | |___  |  __/ | || |_| || |  | | |  _  | |_| | |_) |
+|____/_/   \_\____/___\____| |_|    |_| \____|___| |_| |_| |_|\___/|____/ 
+                                                                          
+ _____ _____ ____ _____ 
+|_   _| ____/ ___|_   _|
+  | | |  _| \___ \ | |  
+  | | | |___ ___) || |  
+  |_| |_____|____/ |_|  
+                        
+GET https://api.github.com/repos/abhinavk99/jikanpy/traffic/views {'Authorization': 'token (oauth token removed)', 'User-Agent': 'PyGithub/Python'} None ==> 403 {'date': 'Mon, 21 Sep 2020 19:08:21 GMT', 'content-type': 'application/json; charset=utf-8', 'transfer-encoding': 'chunked', 'server': 'GitHub.com', 'status': '403 Forbidden', 'x-oauth-scopes': 'read:user', 'x-accepted-oauth-scopes': '', 'x-github-media-type': 'github.v3; format=json', 'x-ratelimit-limit': '5000', 'x-ratelimit-remaining': '4304', 'x-ratelimit-reset': '1600716498', 'x-ratelimit-used': '696', 'access-control-expose-headers': 'ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset', 'access-control-allow-origin': '*', 'strict-transport-security': 'max-age=31536000; includeSubdomains; preload', 'x-frame-options': 'deny', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'referrer-policy': 'origin-when-cross-origin, strict-origin-when-cross-origin', 'content-security-policy': "default-src 'none'", 'vary': 'Accept-Encoding, Accept, X-Requested-With', 'content-encoding': 'gzip', 'x-github-request-id': 'CDCE:8BFF:78F937:9807A2:5F68FA24'} {"message":"Must have push access to repository","documentation_url":"https://docs.github.com/rest/reference/repos#get-page-views"}
+Traceback (most recent call last):
+  File "./pygithub_requests_fails.py", line 14, in <module>
+    print(repo.get_views_traffic())
+  File "/home/sean/.local/share/virtualenvs/pygithub_requests_error-nXm25YLC-/home/sean/.local/share/pyenv/shims/python/lib/python3.8/site-packages/github/Repository.py", line 1925, in get_views_traffic
+    headers, data = self._requester.requestJsonAndCheck(
+  File "/home/sean/.local/share/virtualenvs/pygithub_requests_error-nXm25YLC-/home/sean/.local/share/pyenv/shims/python/lib/python3.8/site-packages/github/Requester.py", line 317, in requestJsonAndCheck
+    return self.__check(
+  File "/home/sean/.local/share/virtualenvs/pygithub_requests_error-nXm25YLC-/home/sean/.local/share/pyenv/shims/python/lib/python3.8/site-packages/github/Requester.py", line 342, in __check
+    raise self.__createException(status, responseHeaders, output)
+github.GithubException.GithubException: 403 {"message": "Must have push access to repository", "documentation_url": "https://docs.github.com/rest/reference/repos#get-page-views"}
+ ____  _____ ___  _   _ _____ ____ _____ ____  
+|  _ \| ____/ _ \| | | | ____/ ___|_   _/ ___| 
+| |_) |  _|| | | | | | |  _| \___ \ | | \___ \ 
+|  _ <| |__| |_| | |_| | |___ ___) || |  ___) |
+|_| \_\_____\__\_\\___/|_____|____/ |_| |____/ 
+                                               
+ __  __  ___  ____  _   _ _     _____   _____ _    ___ _     ____  
+|  \/  |/ _ \|  _ \| | | | |   | ____| |  ___/ \  |_ _| |   / ___| 
+| |\/| | | | | | | | | | | |   |  _|   | |_ / _ \  | || |   \___ \ 
+| |  | | |_| | |_| | |_| | |___| |___  |  _/ ___ \ | || |___ ___) |
+|_|  |_|\___/|____/ \___/|_____|_____| |_|/_/   \_\___|_____|____/ 
+                                                                   
+{'message': 'Must have push access to repository', 'documentation_url': 'https://docs.github.com/rest/reference/repos#get-repository-clones'}
+Traceback (most recent call last):
+  File "./requests_fails.py", line 13, in <module>
+    r.raise_for_status()
+  File "/home/sean/.local/share/virtualenvs/pygithub_requests_error-nXm25YLC-/home/sean/.local/share/pyenv/shims/python/lib/python3.8/site-packages/requests/models.py", line 941, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://api.github.com/repos/seanbreckenridge/albums/traffic/clones
+ _   _ _____ _____ ______  __
+| | | |_   _|_   _|  _ \ \/ /
+| |_| | | |   | | | |_) \  / 
+|  _  | | |   | | |  __//  \ 
+|_| |_| |_|   |_| |_|  /_/\_\
+                             
+ ____  _   _ ____   ____ _        _    ____ ____  _____ ____  
+/ ___|| | | | __ ) / ___| |      / \  / ___/ ___|| ____|  _ \ 
+\___ \| | | |  _ \| |   | |     / _ \ \___ \___ \|  _| | | | |
+ ___) | |_| | |_) | |___| |___ / ___ \ ___) |__) | |___| |_| |
+|____/ \___/|____/ \____|_____/_/   \_\____/____/|_____|____/ 
+                                                              
+GET https://api.github.com/repos/abhinavk99/jikanpy/traffic/views {'Authorization': 'token (oauth token removed)', 'User-Agent': 'PyGithub/Python'} None ==> 200 {'date': 'Mon, 21 Sep 2020 19:08:27 GMT', 'content-type': 'application/json; charset=utf-8', 'transfer-encoding': 'chunked', 'server': 'GitHub.com', 'status': '200 OK', 'cache-control': 'private, max-age=60, s-maxage=60', 'vary': 'Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding', 'etag': 'W/"b0ffe75248d84d876e4b74df767416da51a3aee529f226db11e837a213de5fde"', 'x-oauth-scopes': 'repo', 'x-accepted-oauth-scopes': '', 'x-github-media-type': 'github.v3; format=json', 'x-ratelimit-limit': '5000', 'x-ratelimit-remaining': '4301', 'x-ratelimit-reset': '1600716498', 'x-ratelimit-used': '699', 'access-control-expose-headers': 'ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset', 'access-control-allow-origin': '*', 'strict-transport-security': 'max-age=31536000; includeSubdomains; preload', 'x-frame-options': 'deny', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'referrer-policy': 'origin-when-cross-origin, strict-origin-when-cross-origin', 'content-security-policy': "default-src 'none'", 'content-encoding': 'gzip', 'x-github-request-id': 'CF06:02F6:335746F:3F14AEA:5F68FA2A'} {"count":266,"uniques":101,"views":[{"timestamp":"2020-09-07T00:00:00Z","count":2,"uniques":1},{"timestamp":"2020-09-08T00:00:00Z","count":44,"uniques":8},{"timestamp":"2020-09-09T00:00:00Z","count":11,"uniques":6},{"timestamp":"2020-09-10T00:00:00Z","count":10,"uniques":9},{"timestamp":"2020-09-11T00:00:00Z","count":39,"uniques":15},{"timestamp":"2020-09-12T00:00:00Z","count":15,"uniques":10},{"timestamp":"2020-09-13T00:00:00Z","count":20,"uniques":8},{"timestamp":"2020-09-14T00:00:00Z","count":19,"uniques":12},{"timestamp":"2020-09-15T00:00:00Z","count":7,"uniques":6},{"timestamp":"2020-09-16T00:00:00Z","count":10,"uniques":8},{"timestamp":"2020-09-17T00:00:00Z","count":37,"uniques":11},{"timestamp":"2020-09-18T00:00:00Z","count":12,"uniques":5},{"timestamp":"2020-09-19T00:00:00Z","count":13,"uniques":5},{"timestamp":"2020-09-20T00:00:00Z","count":11,"uniques":6},{"timestamp":"2020-09-21T00:00:00Z","count":16,"uniques":8}]}
+{'count': 266, 'uniques': 101, 'views': [View(uniques=1, timestamp=2020-09-07 00:00:00, count=2), View(uniques=8, timestamp=2020-09-08 00:00:00, count=44), View(uniques=6, timestamp=2020-09-09 00:00:00, count=11), View(uniques=9, timestamp=2020-09-10 00:00:00, count=10), View(uniques=15, timestamp=2020-09-11 00:00:00, count=39), View(uniques=10, timestamp=2020-09-12 00:00:00, count=15), View(uniques=8, timestamp=2020-09-13 00:00:00, count=20), View(uniques=12, timestamp=2020-09-14 00:00:00, count=19), View(uniques=6, timestamp=2020-09-15 00:00:00, count=7), View(uniques=8, timestamp=2020-09-16 00:00:00, count=10), View(uniques=11, timestamp=2020-09-17 00:00:00, count=37), View(uniques=5, timestamp=2020-09-18 00:00:00, count=12), View(uniques=5, timestamp=2020-09-19 00:00:00, count=13), View(uniques=6, timestamp=2020-09-20 00:00:00, count=11), View(uniques=8, timestamp=2020-09-21 00:00:00, count=16)]}

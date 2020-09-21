@@ -1,0 +1,19 @@
+#!/bin/bash
+
+OUTPUT='log.txt'
+rm -f "$OUTPUT"
+
+pipenv install
+
+figlet 'CURL' >> "$OUTPUT"
+./curl_test.sh 2>&1 | tee -a "$OUTPUT"
+
+figlet 'BASIC PYGITHUB TEST' >> "$OUTPUT"
+pipenv run python3 ./pygithub_requests_fails.py 2>&1 | tee -a "$OUTPUT"
+
+figlet 'REQUESTS MODULE FAILS' >> "$OUTPUT"
+pipenv run python3 ./requests_fails.py 2>&1 | tee -a "$OUTPUT"
+
+figlet 'HTTPX SUBCLASSED' >> "$OUTPUT"
+pipenv run python3 ./httpx_subclass_succeeds.py 2>&1 | tee -a "$OUTPUT"
+
