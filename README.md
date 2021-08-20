@@ -1,3 +1,7 @@
+This has been resolved; the issue was a conflicting login from the environment `.netrc` file. See [here](https://github.com/psf/requests/issues/5801#issuecomment-901610012)
+
+---
+
 Debugging/Scripts for a issue made on PyGithub
 
 <https://github.com/PyGithub/PyGithub/issues/1700>
