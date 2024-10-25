@@ -31,14 +31,14 @@ def make_request(using_verb: Callable[..., Any], url: str, headers: Any) -> Any:
         resp.raise_for_status()
 
 def main():
-    # see https://github.com/seanbreckenridge/pygithub_requests_error for token scopes
+    # see https://github.com/purarue/pygithub_requests_error for token scopes
     with open("./token.json", "r") as f:
         auth_token = json.load(f)["token"]
 
     headers = {"Authorization": "token {}".format(auth_token), "User-Agent": "requeststest"}
 
     # replace this with a URL you have access to
-    url = "https://api.github.com/repos/seanbreckenridge/albums/traffic/clones"
+    url = "https://api.github.com/repos/purarue/albums/traffic/clones"
 
     make_request(httpx.get, url, headers)
     make_request(requests.get, url, headers)

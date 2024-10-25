@@ -254,11 +254,11 @@ GET https://api.github.com/repos/abhinavk99/jikanpy/traffic/views {'Authorizatio
 Traceback (most recent call last):
   File "./pygithub_requests_fails.py", line 14, in <module>
     print(repo.get_views_traffic())
-  File "/home/sean/.local/share/virtualenvs/pygithub_requests_error-nXm25YLC-/home/sean/.local/share/pyenv/shims/python/lib/python3.8/site-packages/github/Repository.py", line 1925, in get_views_traffic
+  File "/home/username/.local/share/virtualenvs/pygithub_requests_error-nXm25YLC-/home/username/.local/share/pyenv/shims/python/lib/python3.8/site-packages/github/Repository.py", line 1925, in get_views_traffic
     headers, data = self._requester.requestJsonAndCheck(
-  File "/home/sean/.local/share/virtualenvs/pygithub_requests_error-nXm25YLC-/home/sean/.local/share/pyenv/shims/python/lib/python3.8/site-packages/github/Requester.py", line 317, in requestJsonAndCheck
+  File "/home/username/.local/share/virtualenvs/pygithub_requests_error-nXm25YLC-/home/username/.local/share/pyenv/shims/python/lib/python3.8/site-packages/github/Requester.py", line 317, in requestJsonAndCheck
     return self.__check(
-  File "/home/sean/.local/share/virtualenvs/pygithub_requests_error-nXm25YLC-/home/sean/.local/share/pyenv/shims/python/lib/python3.8/site-packages/github/Requester.py", line 342, in __check
+  File "/home/username/.local/share/virtualenvs/pygithub_requests_error-nXm25YLC-/home/username/.local/share/pyenv/shims/python/lib/python3.8/site-packages/github/Requester.py", line 342, in __check
     raise self.__createException(status, responseHeaders, output)
 github.GithubException.GithubException: 403 {"message": "Must have push access to repository", "documentation_url": "https://docs.github.com/rest/reference/repos#get-page-views"}
  ____  _____ ___  _   _ _____ ____ _____ ____  
@@ -277,9 +277,9 @@ github.GithubException.GithubException: 403 {"message": "Must have push access t
 Traceback (most recent call last):
   File "./requests_fails.py", line 13, in <module>
     r.raise_for_status()
-  File "/home/sean/.local/share/virtualenvs/pygithub_requests_error-nXm25YLC-/home/sean/.local/share/pyenv/shims/python/lib/python3.8/site-packages/requests/models.py", line 941, in raise_for_status
+  File "/home/username/.local/share/virtualenvs/pygithub_requests_error-nXm25YLC-/home/username/.local/share/pyenv/shims/python/lib/python3.8/site-packages/requests/models.py", line 941, in raise_for_status
     raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://api.github.com/repos/seanbreckenridge/albums/traffic/clones
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://api.github.com/repos/purarue/albums/traffic/clones
  _   _ _____ _____ ______  __
 | | | |_   _|_   _|  _ \ \/ /
 | |_| | | |   | | | |_) \  / 
